@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { DateProvider } from './date-context';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DateProvider><App /></DateProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
